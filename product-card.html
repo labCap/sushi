@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="wrapper">
+
+        <div w3-include-html="html/colum-right.html"></div>
+
+        <div class="colum__center">
+            <div w3-include-html="html/header.html"></div>
+
+            <main class="main">
+
+                <div class="product-card__btn-box">
+                    <div class="product-card__btn product-card__btn-prev">
+                        <div class="product-card__btn-img">
+                            <img src="img/arrow1.svg" alt="">
+                        </div>Назад
+                    </div>
+                    <div class="product-card__btn product-card__btn-next">
+                        <div class="product-card__btn-img">
+                            <img src="img/arrow1.svg" alt="">
+                        </div>Вперед
+                    </div>
+                </div>
+
+                <div w3-include-html="html/product-card/goods.html"></div>
+
+                <div w3-include-html="html/product-card/recommended.html"></div>
+
+            </main>
+
+            <div w3-include-html="html/footer.html"></div>
+        </div>
+
+        <div w3-include-html="html/colum-left.html"></div>
+
+    </div>
+
+    <script src="js/w3.js"></script>
+    <script>
+        w3.includeHTML();
+    </script>
+</body>
+
+</html>

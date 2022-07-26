@@ -1,0 +1,42 @@
+.slider {
+
+    &__inner {
+        margin: 30px 0;
+    }
+
+    &__items {
+        margin-bottom: 10px;
+    }
+
+    &__item {
+        // background: url(../img/slider-img.png)no-repeat center/cover;
+        max-width: 950px;
+        height: 470px;
+        overflow: hidden;
+    }
+
+    &__img {
+        max-width: 950px;
+        height: 470px;
+        @include hoverImg;
+    }
+
+    &__dots {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 -6px;
+    }
+
+    &__dot {
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        background: $gray;
+        margin: 0 6px;
+
+        &.active {
+            background: $orange;
+        }
+    }
+}

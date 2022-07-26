@@ -1,0 +1,77 @@
+.recommended {
+
+    // &__inner {}
+
+    &__title {
+        @include font($font, $fontMedium, 24px, 30px, #000);
+        margin-bottom: 22px;
+        text-align: center;
+    }
+
+    &__cards {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    &__card {
+        flex: 0 1 200px;
+        text-align: center;
+    }
+
+    &__img {
+        margin-bottom: 10px;
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        overflow: hidden;
+
+        img {
+            width: 100%;
+            height: auto;
+        }
+    }
+
+    &__card-title {
+
+        @include font($font, $fontMedium, 18px, 22px, #000);
+        margin-bottom: 10px;
+    }
+
+    &__praise-box {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &__prise {
+        @include font($font, $fontBold, 24px, 30px, #000);
+        margin: 0 10px 0 0;
+    }
+
+    &__composition-plus {
+        width: 26px;
+        height: 26px;
+        border-radius: 50%;
+        background: $orange-dark;
+        position: relative;
+        cursor: pointer;
+
+        @include linkTransitionBg;
+
+        &::before,
+        &::after {
+            content: '';
+            width: 14px;
+            height: 2px;
+            background: #fff;
+            position: absolute;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            left: 50%;
+        }
+
+        &::after {
+            transform: translate(-50%, -50%) rotate(90deg);
+        }
+    }
+}

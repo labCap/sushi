@@ -1,0 +1,54 @@
+.reviews {
+    padding: 50px 30px;
+
+    &__header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 30px;
+    }
+
+    &__title {
+        @include font($font, $fontMedium, 24px, 30px, #111);
+    }
+
+    &__btn {
+        padding: 7px 17px;
+        background: #000;
+        border-radius: 5px;
+        @include font($font, $fontRegular, 18px, 22px, #f2f2f2);
+        transition: $transition;
+
+        &:hover {
+            background: #444;
+        }
+
+        &:active {
+            background: #666;
+        }
+    }
+
+    // &__body {}
+
+    &__item {
+        border-radius: 5px;
+        background: #fff;
+        margin-bottom: 22px;
+        padding: 10px;
+    }
+
+    &__name {
+        @include font($font, $fontMedium, 24px, 30px, #111);
+        display: inline-block;
+        margin: 0 20px 20px 0;
+    }
+
+    &__date {
+        @include font($font, $fontMedium, 18px, 22px, $gray);
+    }
+
+    &__text {
+        @include font($font, $fontRegular, 18px, 22px, #111);
+
+    }
+}

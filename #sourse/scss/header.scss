@@ -1,0 +1,87 @@
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    // &__inner {}
+    border-bottom: 0.5px solid $gray;
+
+    &__box {
+        padding: 18px;
+        border-right: 0.5px solid $gray;
+        white-space: nowrap;
+
+        &:last-child {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border: none;
+            width: 100%;
+        }
+    }
+
+    &__info {
+        text-align: center;
+    }
+
+    &__title {
+        @include font($font, $fontMedium, 18px, 22px, #111);
+    }
+
+    &__tel {
+        @include font($font, $fontMedium, 18px, 100%, $orange);
+        display: block;
+    }
+
+    &__text {
+        @include font($font, $fontMedium, 14px, 17px, $gray);
+        padding: 8px 0 0 20px;
+        position: relative;
+
+        &:before {
+            content: '';
+            background: url(../img/clock.svg)no-repeat center;
+            width: 15px;
+            height: 15px;
+            position: absolute;
+            left: 0;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+    }
+
+    // &__city-box {}
+
+    &__city-text {
+        @include font($font, $fontLight, 14px, 17px, $gray);
+        margin-bottom: 5px;
+    }
+
+    &__city {
+        @include font($font, $fontRegular, 18px, 22px, #000);
+        cursor: pointer;
+    }
+
+    &__response-search {
+        display: flex;
+        align-items: center;
+        @include font($font, $fontRegular, 18px, 22px, #000);
+    }
+
+    &__response {
+        a {
+            margin-left: 10px;
+        }
+
+        margin-right: 70px;
+    }
+
+    &__search {
+        margin-right: 40px;
+        cursor: pointer;
+    }
+}
+
+.header__link {
+    color: $orange;
+    @include linkTransition1;
+}

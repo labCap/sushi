@@ -1,0 +1,1306 @@
+@import url("../fonts/DIN_PRO/stylesheet.css");
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:focus,
+:active {
+  outline: none;
+}
+
+a:focus,
+a:active {
+  outline: none;
+}
+
+nav,
+footer,
+header,
+aside {
+  display: block;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input,
+button,
+textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a,
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+body {
+  font-family: "DIN Pro";
+  font-weight: 400;
+  font-style: normal;
+  background: #f2f2f2;
+}
+
+a {
+  display: inline-block;
+  color: #000;
+}
+
+.container {
+  max-width: 950px;
+  margin: 0 auto;
+}
+
+.wrapper {
+  min-height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: relative;
+}
+
+.colum {
+  background: #fff;
+  height: 100%;
+  width: 320px;
+  padding: 25px 0;
+}
+.colum__center {
+  min-height: 100%;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.colum__inner {
+  position: fixed;
+}
+
+.main {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+}
+
+.btn {
+  font-family: "DIN Pro";
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 30px;
+  color: #f2f2f2;
+  padding: 5px;
+  background: #F46D40;
+  border-radius: 5px;
+  text-align: center;
+  -webkit-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
+.btn:hover {
+  background: #FF9846;
+}
+.btn:active {
+  background: #fcae6f;
+}
+
+.product-card__btn-box {
+  width: 100%;
+  padding: 52px 30px;
+  font-family: "DIN Pro";
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  color: #000;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.product-card__btn {
+  cursor: pointer;
+}
+.product-card__btn:last-child .product-card__btn-img {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+.product-card__btn:hover .product-card__btn-img {
+  background: #FF9846;
+}
+.product-card__btn-img {
+  margin: 0 10px;
+  width: 20px;
+  height: 20px;
+  background: #F46D40;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
+.product-card__btn-prev {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+.product-card__btn-next {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+}
+
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border-bottom: 0.5px solid #A4ACAD;
+}
+.header__box {
+  padding: 18px;
+  border-right: 0.5px solid #A4ACAD;
+  white-space: nowrap;
+}
+.header__box:last-child {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: none;
+  width: 100%;
+}
+.header__info {
+  text-align: center;
+}
+.header__title {
+  font-family: "DIN Pro";
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  color: #111;
+}
+.header__tel {
+  font-family: "DIN Pro";
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 100%;
+  color: #FF9846;
+  display: block;
+}
+.header__text {
+  font-family: "DIN Pro";
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  color: #A4ACAD;
+  padding: 8px 0 0 20px;
+  position: relative;
+}
+.header__text:before {
+  content: "";
+  background: url(../img/clock.svg) no-repeat center;
+  width: 15px;
+  height: 15px;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+.header__city-text {
+  font-family: "DIN Pro";
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 17px;
+  color: #A4ACAD;
+  margin-bottom: 5px;
+}
+.header__city {
+  font-family: "DIN Pro";
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  color: #000;
+  cursor: pointer;
+}
+.header__response-search {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: "DIN Pro";
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  color: #000;
+}
+.header__response {
+  margin-right: 70px;
+}
+.header__response a {
+  margin-left: 10px;
+}
+.header__search {
+  margin-right: 40px;
+  cursor: pointer;
+}
+
+.header__link {
+  color: #FF9846;
+  -webkit-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
+.header__link:hover {
+  color: #db833b;
+}
+.header__link:active {
+  color: #fcae6f;
+}
+
+.colum__right {
+  padding-right: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.logo {
+  padding-bottom: 30px;
+  margin-bottom: 30px;
+  border-bottom: 0.5px solid #A4ACAD;
+}
+
+.nav {
+  overflow: auto;
+}
+.nav__list-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 30px;
+  position: relative;
+}
+.nav__list-item:last-child {
+  margin-bottom: 0;
+}
+.nav__list-item img {
+  width: 30px;
+  height: 30px;
+  margin-right: 20px;
+}
+.nav__link {
+  font-family: "DIN Pro";
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 30px;
+  color: #000;
+  -webkit-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
+.nav__link:hover {
+  color: #FF9846;
+}
+.nav__link:active {
+  color: #fcae6f;
+}
+
+.soon {
+  background: #EB5757;
+  border-radius: 10px;
+  padding: 0 8px;
+  font-family: "DIN Pro";
+  font-weight: 400;
+  font-size: 11px;
+  line-height: 14px;
+  color: #fff;
+  text-transform: uppercase;
+  position: absolute;
+  top: -4px;
+  right: 0;
+}
+
+.colum__left {
+  width: 430px;
+  padding-top: 55px;
+  padding-left: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+.colum__card {
+  background: #F2F2F2;
+  border-radius: 5px;
+  overflow: hidden;
+  width: 290px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.cart__title {
+  font-family: "DIN Pro";
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 30px;
+  color: #000;
+  margin: 12px 0 10px 0;
+}
+.cart__text {
+  font-family: "DIN Pro";
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  color: #A4ACAD;
+  margin-bottom: 30px;
+}
+.cart__btn {
+  font-family: "DIN Pro";
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: #f2f2f2;
+  padding: 12px;
+  width: 100%;
+  background: #F46D40;
+  cursor: pointer;
+}
+
+.map {
+  position: relative;
+}
+.map__box {
+  height: 115px;
+}
+.map__img {
+  max-width: 290px;
+}
+.map__img img {
+  width: 100%;
+}
+.map__btn {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: #F46D40;
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+.map__title {
+  font-family: "DIN Pro";
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 30px;
+  color: #000;
+  padding: 38px 0 10px 0;
+}
+.map__text {
+  font-family: "DIN Pro";
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  color: #A4ACAD;
+}
+
+.btn__hover {
+  -webkit-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
+.btn__hover:hover {
+  background: #FF9846;
+}
+.btn__hover:active {
+  background: #fcae6f;
+}
+
+.slider__inner {
+  margin: 30px 0;
+}
+.slider__items {
+  margin-bottom: 10px;
+}
+.slider__item {
+  max-width: 950px;
+  height: 470px;
+  overflow: hidden;
+}
+.slider__img {
+  max-width: 950px;
+  height: 470px;
+  overflow: hidden;
+  -webkit-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
+.slider__img:hover {
+  -webkit-transform: scale(1.04);
+          transform: scale(1.04);
+}
+.slider__img img {
+  width: 100%;
+  height: auto;
+}
+.slider__dots {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0 -6px;
+}
+.slider__dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #A4ACAD;
+  margin: 0 6px;
+}
+.slider__dot.active {
+  background: #FF9846;
+}
+
+.categories {
+  margin-bottom: 58px;
+}
+.categories__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: -15px 0;
+}
+.categories__box {
+  margin: 15px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 470px;
+}
+.categories__item {
+  border-radius: 5px;
+  overflow: hidden;
+  position: relative;
+}
+.categories__img {
+  overflow: hidden;
+  -webkit-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
+.categories__img:hover {
+  -webkit-transform: scale(1.04);
+          transform: scale(1.04);
+}
+.categories__img img {
+  width: 100%;
+  height: auto;
+}
+.categories__title {
+  font-family: "DIN Pro";
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 30px;
+  color: #fff;
+  position: absolute;
+  left: 10px;
+  bottom: 10px;
+}
+
+.new {
+  margin-bottom: 60px;
+  position: relative;
+}
+.new__tabs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-line-pack: start;
+      align-content: start;
+  margin-bottom: 30px;
+}
+.new__tab {
+  font-family: "DIN Pro";
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 30px;
+  color: #A4ACAD;
+  margin: 0 30px 0 0;
+  text-decoration: underline;
+  cursor: pointer;
+}
+.new__tab:last-child {
+  margin-right: 0;
+}
+.new__tab.active {
+  font-family: "DIN Pro";
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 30px;
+  color: #000;
+  text-decoration: none;
+}
+.new__cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0 -20px;
+}
+.new__card {
+  margin: 0 20px;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 290px;
+          flex: 0 1 290px;
+  background: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.new__img {
+  text-align: center;
+  margin-bottom: 30px;
+}
+.new__text {
+  padding: 0 17px;
+  border-bottom: 0.5px solid #A4ACAD;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 100%;
+          flex: 1 1 100%;
+}
+.new__title {
+  font-family: "DIN Pro";
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 30px;
+  color: #000;
+  margin: 0 0 30px 0;
+}
+.new__descr {
+  font-family: "DIN Pro";
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  color: #A4ACAD;
+  margin: 0 0 20px 0;
+}
+.new__praise-box {
+  padding: 10px 10px 10px 17px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.new__prise {
+  font-family: "DIN Pro";
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 30px;
+  color: #000;
+  margin: 0 12px 0 0;
+  white-space: nowrap;
+}
+.new__btn {
+  width: 100%;
+}
+.new__arrows {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.arrows__btn {
+  width: 60px;
+  height: 60px;
+  background: #111;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  cursor: pointer;
+  -webkit-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
+.arrows__btn:hover {
+  background: #444;
+}
+.arrows__btn:active {
+  background: #666;
+}
+.arrows__next {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.about {
+  margin-bottom: 60px;
+}
+.about__inner {
+  font-family: "DIN Pro";
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 100%;
+  color: #A4ACAD;
+}
+.about__text {
+  position: relative;
+  margin-bottom: 45px;
+}
+.about__text::after {
+  content: "";
+  width: 100%;
+  height: 110px;
+  position: absolute;
+  bottom: -40px;
+  left: 0;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(242, 242, 242, 0)), to(#F2F2F2));
+  background: linear-gradient(180deg, rgba(242, 242, 242, 0) 0%, #F2F2F2 100%);
+}
+.about__title {
+  margin-bottom: 10px;
+  font-family: "DIN Pro";
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 38px;
+  color: #A4ACAD;
+}
+.about__descr {
+  margin-bottom: 10px;
+}
+.about__list {
+  margin-bottom: 10px;
+}
+.about__list-item {
+  list-style: disc;
+  margin: 0 0 0 25px;
+}
+.about__btn {
+  font-family: "DIN Pro";
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 100%;
+  color: #F46D40;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  cursor: pointer;
+  -webkit-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
+.about__btn:hover {
+  color: #db833b;
+}
+.about__btn:active {
+  color: #fcae6f;
+}
+.about__btn::after {
+  content: "";
+  width: 15px;
+  height: 15px;
+  border-right: 1px solid #F46D40;
+  border-bottom: 1px solid #F46D40;
+  display: block;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  margin-bottom: 3px;
+  margin-left: 10px;
+}
+
+.goods {
+  margin-bottom: 30px;
+}
+.goods__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #fff;
+}
+.goods__img {
+  max-width: 621px;
+  height: auto;
+  overflow: hidden;
+}
+.goods__img img {
+  width: 100%;
+}
+.goods__info-box {
+  padding: 20px 30px 50px;
+}
+.goods__title {
+  font-family: "DIN Pro";
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 50px;
+  color: #000;
+  margin-bottom: 10px;
+}
+.goods__info {
+  font-family: "DIN Pro";
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 22px;
+  color: #FF9846;
+  margin-bottom: 30px;
+}
+.goods__prse-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 25px;
+}
+.goods__prise {
+  font-family: "DIN Pro";
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 30px;
+  color: #000;
+  margin: 0 30px 0 0;
+}
+.goods__quantity {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.goods__composition-num {
+  font-family: "DIN Pro";
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 45px;
+  color: #000;
+  margin: 0 20px;
+}
+.goods__composition-minus {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: #fff;
+  position: relative;
+  cursor: pointer;
+  -webkit-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
+.goods__composition-minus:hover {
+  background: #d3d3d3;
+}
+.goods__composition-minus:active {
+  background: #999;
+}
+.goods__composition-minus::before {
+  content: "";
+  width: 20px;
+  height: 2px;
+  background: #000;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  left: 50%;
+}
+.goods__composition-plus {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: #F46D40;
+  position: relative;
+  cursor: pointer;
+  -webkit-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
+.goods__composition-plus:hover {
+  background: #FF9846;
+}
+.goods__composition-plus:active {
+  background: #fcae6f;
+}
+.goods__composition-plus::before, .goods__composition-plus::after {
+  content: "";
+  width: 20px;
+  height: 2px;
+  background: #fff;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  left: 50%;
+}
+.goods__composition-plus::after {
+  -webkit-transform: translate(-50%, -50%) rotate(90deg);
+          transform: translate(-50%, -50%) rotate(90deg);
+}
+.goods__composition-title {
+  font-family: "DIN Pro";
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  color: #111;
+  margin-bottom: 5px;
+}
+.goods__composition-text {
+  font-family: "DIN Pro";
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 22px;
+  color: #111;
+  margin-bottom: 30px;
+}
+.goods__btn {
+  padding: 5px 65px;
+}
+
+.recommended__title {
+  font-family: "DIN Pro";
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 30px;
+  color: #000;
+  margin-bottom: 22px;
+  text-align: center;
+}
+.recommended__cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+.recommended__card {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 200px;
+          flex: 0 1 200px;
+  text-align: center;
+}
+.recommended__img {
+  margin-bottom: 10px;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.recommended__img img {
+  width: 100%;
+  height: auto;
+}
+.recommended__card-title {
+  font-family: "DIN Pro";
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  color: #000;
+  margin-bottom: 10px;
+}
+.recommended__praise-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.recommended__prise {
+  font-family: "DIN Pro";
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 30px;
+  color: #000;
+  margin: 0 10px 0 0;
+}
+.recommended__composition-plus {
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  background: #F46D40;
+  position: relative;
+  cursor: pointer;
+  -webkit-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
+.recommended__composition-plus:hover {
+  background: #FF9846;
+}
+.recommended__composition-plus:active {
+  background: #fcae6f;
+}
+.recommended__composition-plus::before, .recommended__composition-plus::after {
+  content: "";
+  width: 14px;
+  height: 2px;
+  background: #fff;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  left: 50%;
+}
+.recommended__composition-plus::after {
+  -webkit-transform: translate(-50%, -50%) rotate(90deg);
+          transform: translate(-50%, -50%) rotate(90deg);
+}
+
+.reviews {
+  padding: 50px 30px;
+}
+.reviews__header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 30px;
+}
+.reviews__title {
+  font-family: "DIN Pro";
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 30px;
+  color: #111;
+}
+.reviews__btn {
+  padding: 7px 17px;
+  background: #000;
+  border-radius: 5px;
+  font-family: "DIN Pro";
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  color: #f2f2f2;
+  -webkit-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
+.reviews__btn:hover {
+  background: #444;
+}
+.reviews__btn:active {
+  background: #666;
+}
+.reviews__item {
+  border-radius: 5px;
+  background: #fff;
+  margin-bottom: 22px;
+  padding: 10px;
+}
+.reviews__name {
+  font-family: "DIN Pro";
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 30px;
+  color: #111;
+  display: inline-block;
+  margin: 0 20px 20px 0;
+}
+.reviews__date {
+  font-family: "DIN Pro";
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  color: #A4ACAD;
+}
+.reviews__text {
+  font-family: "DIN Pro";
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  color: #111;
+}
+
+.footer__inner {
+  border-top: 0.5px solid #A4ACAD;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 270px;
+}
+.footer__box {
+  border-right: 0.5px solid #A4ACAD;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 290px;
+          flex: 1 1 290px;
+  height: 100%;
+  padding: 40px;
+}
+.footer__box:last-child {
+  border: none;
+}
+.footer__link {
+  font-family: "DIN Pro";
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 100%;
+  color: #000;
+  margin-bottom: 20px;
+  -webkit-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
+.footer__link:hover {
+  color: #FF9846;
+}
+.footer__link:active {
+  color: #fcae6f;
+}
+.footer__title {
+  font-family: "DIN Pro";
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  color: #111;
+  margin-bottom: 10px;
+}
+.footer__tel {
+  font-family: "DIN Pro";
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  color: #A4ACAD;
+  margin-bottom: 20px;
+}
+.footer__text {
+  font-family: "DIN Pro";
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  color: #A4ACAD;
+  margin-bottom: 10px;
+}
+.footer__ico {
+  margin: 0 -15px;
+}
+.footer__ico-link {
+  margin: 0 15px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  opacity: 0.3;
+  -webkit-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
+.footer__ico-link:hover {
+  opacity: 1;
+}
+.footer__ico-link img {
+  width: 100%;
+  height: auto;
+}
+.footer__tel-link {
+  margin-bottom: 5px;
+  font-family: "DIN Pro";
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  color: #A4ACAD;
+}
+.footer__tel-link a {
+  font-family: "DIN Pro";
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  color: #A4ACAD;
+  text-decoration: underline;
+  -webkit-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
+.footer__tel-link a:hover {
+  color: #FF9846;
+}
+.footer__tel-link a:active {
+  color: #fcae6f;
+}
+.footer__address {
+  font-family: "DIN Pro";
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  color: #A4ACAD;
+  cursor: pointer;
+  -webkit-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
+.footer__address:hover {
+  color: #FF9846;
+}
+.footer__address:active {
+  color: #fcae6f;
+}

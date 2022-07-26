@@ -1,0 +1,116 @@
+.new {
+    margin-bottom: 60px;
+    position: relative;
+
+    // &__inner {}
+
+    &__tabs {
+        display: flex;
+        align-content: start;
+        margin-bottom: 30px;
+    }
+
+    &__tab {
+        @include font($font, $fontMedium, 24px, 30px, $gray);
+        margin: 0 30px 0 0;
+        text-decoration: underline;
+        cursor: pointer;
+
+        &:last-child {
+            margin-right: 0;
+        }
+
+        &.active {
+            @include font($font, $fontMedium, 24px, 30px, #000);
+            text-decoration: none;
+        }
+    }
+
+    &__cards {
+        display: flex;
+        justify-content: center;
+        margin: 0 -20px;
+    }
+
+    &__card {
+        margin: 0 20px;
+        flex: 0 1 290px;
+        background: #fff;
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__img {
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    &__text {
+        padding: 0 17px;
+        border-bottom: 0.5px solid $gray;
+        flex: 1 1 100%;
+    }
+
+    &__title {
+        @include font($font, $fontMedium, 24px, 30px, #000);
+        margin: 0 0 30px 0;
+    }
+
+    &__descr {
+        @include font($font, $fontMedium, 18px, 22px, $gray);
+        margin: 0 0 20px 0;
+    }
+
+    &__praise-box {
+        padding: 10px 10px 10px 17px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &__prise {
+        @include font($font, $fontBold, 24px, 30px, #000);
+        margin: 0 12px 0 0;
+        white-space: nowrap;
+    }
+
+    &__btn {
+        width: 100%;
+    }
+
+    &__arrows {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        position: absolute;
+        top: 50%;
+        left: 0;
+        transform: translateY(-50%);
+    }
+}
+
+.arrows {
+    &__btn {
+        width: 60px;
+        height: 60px;
+        background: #111;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        transition: $transition;
+
+        &:hover {
+            background: #444;
+        }
+
+        &:active {
+            background: #666;
+        }
+    }
+
+    &__next {
+        transform: rotate(180deg);
+    }
+}

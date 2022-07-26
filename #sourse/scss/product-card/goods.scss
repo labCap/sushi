@@ -1,0 +1,126 @@
+.goods {
+    margin-bottom: 30px;
+
+    &__inner {
+        display: flex;
+        align-items: center;
+        background: #fff;
+    }
+
+    &__img {
+        max-width: 621px;
+        height: auto;
+        overflow: hidden;
+
+        img {
+            width: 100%;
+        }
+    }
+
+    &__info-box {
+        padding: 20px 30px 50px;
+    }
+
+    &__title {
+        @include font($font, $fontMedium, 40px, 50px, #000);
+        margin-bottom: 10px;
+    }
+
+    &__info {
+        @include font($font, $fontLight, 18px, 22px, $orange);
+        margin-bottom: 30px;
+    }
+
+    &__prse-box {
+        display: flex;
+        align-items: center;
+        margin-bottom: 25px;
+    }
+
+    &__prise {
+        @include font($font, $fontBold, 24px, 30px, #000);
+        margin: 0 30px 0 0;
+    }
+
+    &__quantity {
+        display: flex;
+        align-items: center;
+    }
+
+    &__composition-num {
+        @include font($font, $fontBold, 36px, 45px, #000);
+        margin: 0 20px;
+    }
+
+    &__composition-minus {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        background: #fff;
+        position: relative;
+        cursor: pointer;
+
+        transition: $transition;
+
+
+        &:hover {
+            background: #d3d3d3;
+        }
+
+        &:active {
+            background: #999;
+        }
+
+        &::before {
+            content: '';
+            width: 20px;
+            height: 2px;
+            background: #000;
+            position: absolute;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            left: 50%;
+        }
+    }
+
+    &__composition-plus {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        background: $orange-dark;
+        position: relative;
+        cursor: pointer;
+
+        @include linkTransitionBg;
+
+        &::before,
+        &::after {
+            content: '';
+            width: 20px;
+            height: 2px;
+            background: #fff;
+            position: absolute;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            left: 50%;
+        }
+
+        &::after {
+            transform: translate(-50%, -50%) rotate(90deg);
+        }
+    }
+
+    &__composition-title {
+        @include font($font, $fontMedium, 18px, 22px, #111);
+        margin-bottom: 5px;
+    }
+
+    &__composition-text {
+        @include font($font, $fontLight, 18px, 22px, #111);
+        margin-bottom: 30px;
+    }
+
+    &__btn {
+        padding: 5px 65px;
+    }
+}

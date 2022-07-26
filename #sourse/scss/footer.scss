@@ -1,0 +1,84 @@
+.footer {
+
+    &__inner {
+        border-top: 0.5px solid $gray;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 270px;
+    }
+
+    &__box {
+        border-right: 0.5px solid $gray;
+        flex: 1 1 290px;
+        height: 100%;
+        padding: 40px;
+
+        &:last-child {
+            border: none;
+        }
+    }
+
+    // &__list {}
+
+    &__link {
+        @include font($font, $fontRegular, 18px, 100%, #000);
+        margin-bottom: 20px;
+        @include linkTransition;
+
+    }
+
+    &__title {
+        @include font($font, $fontMedium, 18px, 22px, #111);
+        margin-bottom: 10px;
+    }
+
+    &__tel {
+        @include font($font, $fontMedium, 18px, 22px, $gray);
+        margin-bottom: 20px;
+    }
+
+    &__text {
+        @include font($font, $fontRegular, 18px, 22px, #A4ACAD);
+        margin-bottom: 10px;
+    }
+
+    &__ico {
+        margin: 0 -15px;
+    }
+
+    &__ico-link {
+        margin: 0 15px;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        opacity: 0.3;
+        transition: $transition;
+
+        &:hover {
+            opacity: 1;
+        }
+
+        img {
+            width: 100%;
+            height: auto;
+        }
+    }
+
+    &__tel-link {
+        margin-bottom: 5px;
+        @include font($font, $fontMedium, 18px, 22px, $gray);
+
+        a {
+            @include font($font, $fontMedium, 18px, 22px, $gray);
+            text-decoration: underline;
+            @include linkTransition;
+        }
+    }
+
+    &__address {
+        @include font($font, $fontMedium, 18px, 22px, $gray);
+        cursor: pointer;
+        @include linkTransition;
+    }
+}

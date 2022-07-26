@@ -1,0 +1,36 @@
+.categories {
+    margin-bottom: 58px;
+
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        margin: -15px 0;
+    }
+
+    &__box {
+        margin: 15px 0;
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        width: 470px;
+    }
+
+    &__item {
+        border-radius: 5px;
+        overflow: hidden;
+        position: relative;
+        // width: 100%;
+    }
+
+    &__img {
+        @include hoverImg;
+    }
+
+    &__title {
+        @include font($font, $fontMedium, 24px, 30px, #fff);
+        position: absolute;
+        left: 10px;
+        bottom: 10px;
+    }
+}
